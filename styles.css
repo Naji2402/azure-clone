@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: font-1;
+    src: url(font/latest.woff2);
+}
+@font-face {
+    font-family: font-2;
+    src: url(font/latest\ \(1\).woff2);
+}
+@font-face {
+    font-family: font-3;
+    src: url(font/latest\ \(2\).woff2);
+}
+@font-face {
+    font-family: font-4;
+    src: url(font/MWFFluentIcons.woff2);
+}
+@font-face {
+    font-family: font-5;
+    src: url(font/mwfmdl2-v3.54.woff);
+}
+:root{
+    --font-one:font-1;
+    --font-two:font-2;
+    --font-three:font-3;
+    --font-four:font-4;
+    --font-five:font-5;
+}
+
+/* top header small css */
+/* top header small one */
+.top-header-small{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 12px 4px;
+}
+.top-header-small img{
+    width: 108px;
+    height: 23px;
+}
+@media screen and (min-width:858px){
+    .top-header-small{
+        display: none;
+    }
+}
+/* top header small one ed */
+/* top header small two */
+.top-header-small-two{
+    width: 100%;
+    height: 34px;
+    background-color: #fff;
+    border-bottom: 1px solid #e6e6e6;
+    padding-left: 15px;
+    display: flex;
+    align-items:center;
+}
+.top-header-small-two p{
+    font-size: 15px;
+    font-weight: 600;
+    color: #000;
+    font-family: var(--font-one);
+    height: 100%;
+}
+@media screen and (min-width:858px){
+    .top-header-small-two{
+        display: none;
+    }
+}
+/* top header small two end */
+/* top header css end */
