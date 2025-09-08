@@ -50,6 +50,7 @@
     .top-header-small{
         display: none;
     }
+    
 }
 /* top header small one ed */
 /* top header small two */
@@ -61,6 +62,11 @@
     padding-left: 15px;
     display: flex;
     align-items:center;
+}
+.top-header-small-two div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 .top-header-small-two p{
     font-size: 15px;
@@ -76,3 +82,106 @@
 }
 /* top header small two end */
 /* top header css end */
+
+
+/* top header large css */
+.top-header-large{
+    width: 100%;
+    height: 56px;
+    padding: 0 35px;
+}
+.top-header-large-main{
+    display: flex;
+    max-width: 1600px;
+    height: 100%;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.top-header-large-main ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-header-large-main ul li{
+    color: #262626;
+    font-size: 13px;
+    font-family: var(--font-three);
+   
+}
+.top-header-large-main ul li:nth-of-type(1){
+     padding: 8px 8px 11px 1px;
+}
+.top-header-large-main ul li:nth-of-type(2){
+     padding: 14px 16px 18px 18px;
+}
+.top-header-large-main ul li:nth-of-type(3){
+     padding: 14px 16px 18px 10px;
+}
+.top-header-large-main ul li:nth-of-type(4){
+     padding: 14px 16px 18px 6px;
+}
+.top-header-large-main ul li:nth-of-type(5){
+     padding: 14px 16px 18px 6px;
+}
+.top-header-large-main ul li:nth-of-type(6){
+     padding: 14px 16px 18px 6px;
+}
+.top-header-large-main ul svg{
+    width: 12px;
+    height: 15px;
+    position: relative;
+    left: 5px;
+    top: 3px;
+}
+.top-header-large-main ul li div{
+    display: flex;
+    /* align-items: center; */
+}
+.logo-img{
+    padding: 16px 6px 16px 0;
+}
+.logo-img img{
+    width: 108px;
+    height: 23px;
+}
+.top-header-large-main div:nth-of-type(2){
+    font-size: 18px;
+    font-family: var(--font-one);
+    margin-left: 16px;
+    padding: 1px 16px 6px 24px;
+    display: flex;
+    position: relative;
+}
+.top-header-large-main div:nth-of-type(2)::before{
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    border-left: 2px solid black;
+    height: 24px;
+    margin-left: 3px;
+}
+
+.search-icon-one{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex: 1;
+    padding-right: 6px;
+}
+
+.search-icon-one svg{
+    width: 16px;
+    height: 16px;
+    transform: rotatez(90deg);
+}
+
+.top-header-large-right-section{
+    display: none;
+}
+@media screen and (min-width:1084px){
+    .top-header-large-right-section{
+        display: flex;
+    }
+}
