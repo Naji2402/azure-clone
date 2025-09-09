@@ -31,7 +31,7 @@
     --font-four:font-4;
     --font-five:font-5;
 }
-
+/*header css */
 /* top header small css */
 /* top header small one */
 .top-header-small{
@@ -41,10 +41,19 @@
     align-items: center;
     border-bottom: 1px solid #e6e6e6;
     padding: 12px 4px;
+    position: relative;
 }
 .top-header-small img{
     width: 108px;
     height: 23px;
+}
+.top-header-small div:nth-child(1) svg{
+    width: 22px;
+    height: 22px;
+    transform: rotatez(90deg);
+    position: absolute;
+    left: 4px;
+    top: 17px;
 }
 @media screen and (min-width:858px){
     .top-header-small{
@@ -59,14 +68,14 @@
     height: 34px;
     background-color: #fff;
     border-bottom: 1px solid #e6e6e6;
-    padding-left: 15px;
+    padding-left: 16px;
     display: flex;
     align-items:center;
 }
 .top-header-small-two div{
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 5px;
 }
 .top-header-small-two p{
     font-size: 15px;
@@ -74,6 +83,11 @@
     color: #000;
     font-family: var(--font-one);
     height: 100%;
+}
+.top-header-small-two div:nth-child(1) svg{
+    width: 25px;
+    height: 18px;
+    margin-top: 4px;
 }
 @media screen and (min-width:858px){
     .top-header-small-two{
@@ -292,20 +306,265 @@
     .top-header-large-main ul li:nth-of-type(5){
          display: block;
     }
-}
-@media screen and (min-width:1398px){
-    .search-icon-two span{
-        display: block;
-    }
-     .top-header-large-main ul li:nth-of-type(6){
+    .top-header-large-main ul li:nth-of-type(6){
         display: block;
      }
       .top-header-large-main ul li:nth-of-type(7){
         display: none;
       }
 }
-@media screen and (min-width:1430px){
+@media screen and (min-width:1398px){
+    .search-icon-two span{
+        display: block;
+    }
+     
+}
+@media screen and (min-width:1350px){
     .top-header-large{
         padding: 0 83px;
     }
 }
+
+/* header css end */
+
+
+
+/* blog section css */
+
+.blog-section{
+    background-color: #006DC1;
+    padding: 8px 16px 6px 16px;
+}
+.blog-section-main{
+    display: flex;
+    justify-content: center;
+}
+.blog-section-info div{
+    color: white;
+    font-size: 15px;
+    font-family: var(--font-three);
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: -0.08px;
+}
+.blog-section-read{
+    text-align: center;
+    margin-top: 4px;
+    padding-left: 8px;
+    padding-bottom: 1px;
+}
+.blog-section-read a{
+    font-size: 14px;
+    color: #F4F4FD;
+    font-family: var(--font-one);
+    position: relative;
+    bottom: 2px;
+    text-underline-offset: 2px;
+}
+.blog-close-button button{
+    background: transparent;
+    border:none;
+    width: 57px;
+    padding:  8px 0px 6px 15px;
+}
+.blog-close-button svg{
+    color: white;
+    width: 14px;
+    height: 15px;
+}
+
+@media screen and (min-width:753px){
+    .blog-section-main div:nth-child(1){
+        display: flex;
+    }
+    .blog-section {
+         background-color: #006DC1;
+        padding: 10px 16px 3px 16px;
+    }
+    .blog-section-read{
+        margin-top: 5px;
+    }
+    
+}
+
+
+/* blog section css end */
+
+
+/* get started css */
+
+.banner-img{
+    width: 100%;
+}
+.get-started-top-section{
+    padding: 0 16px;
+    
+}
+.get-started-top-section div:nth-child(1){
+    font-size: 12px;
+    font-family: var(--font-one);
+    color: #17253D;
+    margin: 28px 0 12px 0;
+    letter-spacing: 0.08em;
+}
+.get-started-top-section div:nth-child(2) h1{
+    font-size: 40px;
+    color: #0E1726;
+    font-family: var(--font-three);
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.025em;
+}
+.get-started-top-section div:nth-child(3){
+    font-size: 16px;
+    padding-right: 16px;
+    color: #17253D;
+    font-family: var(--font-three);
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.get-started-top-section div:nth-child(4){
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.get-started-top-section div:nth-child(4) a{
+    text-decoration: none;
+    font-family: var(--font-two);
+    font-weight: 600;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+}
+.get-started-top-section div:nth-child(4) a:nth-of-type(1){
+    color: white;
+    background-color: #0078D4;
+}
+.get-started-top-section div:nth-child(4) a:nth-of-type(2){
+    color: #0067b8;
+    background-color: transparent;
+    border: 2px solid #17253d;
+    
+}
+
+.get-started-bottom-section{
+    padding: 0 16px;
+    width: 100%;
+    padding-bottom: 56px;
+    background: rgb(244, 250, 253);
+}
+.get-started-bottom-section div img{
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (min-width:539px){
+    .get-started-top-section{
+    padding: 0 64px;
+}
+    .get-started-bottom-section{
+    padding: 0 64px;
+}
+.get-started-top-section div:nth-child(4){
+    flex-direction: row;
+}
+}
+@media screen and (min-width:860px){
+    .get-started-section{
+        display:none ;
+    }
+}
+/* get started css end */
+/* get started large css */
+.get-started-section-large{
+    background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/30450-hero-image?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=666&qlt=100&fmt=png-alpha&fit=constrain");
+    width: 100%;
+    height: 628px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+.get-started-main-section-large{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.get-started-top-section-large{
+    padding: 0 16px;
+    
+}
+.get-started-top-section-large div:nth-child(1){
+    font-size: 12px;
+    font-family: var(--font-one);
+    color: #17253D;
+    margin: 28px 0 12px 0;
+    letter-spacing: 0.08em;
+}
+.get-started-top-section-large div:nth-child(2) h1{
+    font-size: 40px;
+    color: #0E1726;
+    font-family: var(--font-three);
+    font-weight: 400;
+    line-height: 3rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.025em;
+}
+.get-started-top-section-large div:nth-child(3){
+    font-size: 16px;
+    padding-right: 16px;
+    color: #17253D;
+    font-family: var(--font-three);
+    font-weight: 400;
+    line-height: 1.5rem;
+    letter-spacing: -0.03em;
+}
+.get-started-top-section-large div:nth-child(4){
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.get-started-top-section-large div:nth-child(4) a{
+    text-decoration: none;
+    font-family: var(--font-two);
+    font-weight: 600;
+    padding: 16px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+}
+.get-started-top-section-large div:nth-child(4) a:nth-of-type(1){
+    color: white;
+    background-color: #0078D4;
+}
+.get-started-top-section-large div:nth-child(4) a:nth-of-type(2){
+    color: #0067b8;
+    background-color: transparent;
+    border: 2px solid #17253d;
+    
+}
+
+.get-started-bottom-section-large{
+    padding: 0 16px;
+    width: 100%;
+}
+.get-started-bottom-section-large div img{
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (min-width:860px){
+    .get-started-section-large{
+        display: block;
+    }
+}
+
+/* get header large css end */
