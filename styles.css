@@ -16,20 +16,11 @@
     font-family: font-3;
     src: url(font/latest\ \(2\).woff2);
 }
-@font-face {
-    font-family: font-4;
-    src: url(font/MWFFluentIcons.woff2);
-}
-@font-face {
-    font-family: font-5;
-    src: url(font/mwfmdl2-v3.54.woff);
-}
+
 :root{
     --font-one:font-1;
     --font-two:font-2;
     --font-three:font-3;
-    --font-four:font-4;
-    --font-five:font-5;
 }
 /*header css */
 /* top header small css */
@@ -482,6 +473,9 @@
 /* get started css end */
 /* get started large css */
 .get-started-section-large{
+    padding: 0 56px;
+}
+.get-started-section-large{
     background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/30450-hero-image?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=666&qlt=100&fmt=png-alpha&fit=constrain");
     width: 100%;
     height: 628px;
@@ -491,13 +485,15 @@
     display: none;
 }
 .get-started-main-section-large{
+    max-width: 824px;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
+    padding-bottom: 75px;
 }
 .get-started-top-section-large{
-    padding: 0 16px;
+    flex:0 0 calc(calc(100% - calc(1rem * (2 - 1))) / 2);
     
 }
 .get-started-top-section-large div:nth-child(1){
@@ -508,17 +504,17 @@
     letter-spacing: 0.08em;
 }
 .get-started-top-section-large div:nth-child(2) h1{
-    font-size: 40px;
+    font-size: 44px;
     color: #0E1726;
-    font-family: var(--font-three);
-    font-weight: 400;
+    font-family: var(--font-two);
+    font-weight: 500;
     line-height: 3rem;
-    margin-bottom: 16px;
+    margin-bottom: 28px;
     letter-spacing: -0.025em;
 }
 .get-started-top-section-large div:nth-child(3){
     font-size: 16px;
-    padding-right: 16px;
+    padding-right: 32px;
     color: #17253D;
     font-family: var(--font-three);
     font-weight: 400;
@@ -526,9 +522,8 @@
     letter-spacing: -0.03em;
 }
 .get-started-top-section-large div:nth-child(4){
-    margin-top: 24px;
+    margin-top: 32px;
     display: flex;
-    flex-direction: column;
     gap: 8px;
     margin-bottom: 8px;
 }
@@ -536,7 +531,7 @@
     text-decoration: none;
     font-family: var(--font-two);
     font-weight: 600;
-    padding: 16px;
+    padding: 12px 17px;
     text-align: center;
     border-radius: 8px;
     font-size: 15px;
@@ -554,12 +549,19 @@
 }
 
 .get-started-bottom-section-large{
-    padding: 0 16px;
-    width: 100%;
+    margin-left: 16px;
+    margin-top: 28px;
+    /* flex: 0 0 calc(calc(100% - calc(1rem * (2 - 1))) / 2); */
+}
+.get-started-bottom-section-large-main{
+    padding: 25px;
+    border-radius: 16px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(18px);
 }
 .get-started-bottom-section-large div img{
     width: 100%;
-    border-radius: 10px;
+    border-radius: 16px;
 }
 @media screen and (min-width:860px){
     .get-started-section-large{
