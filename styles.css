@@ -16,7 +16,9 @@
     font-family: font-3;
     src: url(font/latest\ \(2\).woff2);
 }
-
+body{
+    background: rgb(244, 250, 253);
+}
 :root{
     --font-one:font-1;
     --font-two:font-2;
@@ -33,6 +35,7 @@
     border-bottom: 1px solid #e6e6e6;
     padding: 12px 4px;
     position: relative;
+    background-color: white;
 }
 .top-header-small img{
     width: 108px;
@@ -392,6 +395,9 @@
 .banner-img{
     width: 100%;
 }
+/* .get-started-section{
+        background: rgb(244, 250, 253);
+} */
 .get-started-top-section{
     padding: 0 16px;
     
@@ -450,21 +456,21 @@
 }
 
 .get-started-bottom-section{
-    padding: 0 16px;
+    padding: 0 16px 88px 16px;
     width: 100%;
-    padding-bottom: 56px;
-    background: rgb(244, 250, 253);
+    box-shadow: inset 0 -4px 4px -5px rgba(0, 0, 0, 0.3);
 }
 .get-started-bottom-section div img{
     width: 100%;
     border-radius: 10px;
 }
+
 @media screen and (min-width:539px){
     .get-started-top-section{
     padding: 0 64px;
 }
     .get-started-bottom-section{
-    padding: 0 64px;
+        padding: 0 88px 88px 65px;
 }
 .get-started-top-section div:nth-child(4){
     flex-direction: row;
@@ -581,3 +587,56 @@
 }
 }
 /* get header large css end */
+/* featured news section css */
+.featured-news-section{
+    width: 100%;
+    height: 58px;
+    position: relative;
+    margin-bottom: 200px;
+}
+.featured-news-section-main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.featured-news-section-main svg{
+    position: absolute;
+    width: 14px;
+    height: 15px;
+    right: 16px;
+    top: 17px;
+    z-index: 1;
+}
+.featured-news-section::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    background-color: #004275;
+    bottom: 0;
+    z-index: 1;
+    display: block;
+}
+.featured-news-select{
+    width: 100%;
+    height: 100%;
+    padding: 0 16px 8px 16px;
+    color: #004275;
+    font-size: 14px;
+    font-family: var(--font-one);
+    appearance: none;
+    background-color: white;
+    position: relative;
+    border: none;
+}
+.featured-news-select:focus{
+    outline: none;
+}
+
+@media screen and (min-width:859px){
+    .featured-news-section{
+        display: none;
+    }
+}
+
+/* featured news section css end */
