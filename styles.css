@@ -810,4 +810,28 @@ body{
     color:#004275;
     font-family: var(--font-one);
 }
+@media screen and (min-width: 538px){
+    .featured-news-cards-section-container{
+        padding: 56px 64px;
+    }
+}
+@media screen and (min-width:860px) {
+    .featured-news-card-section{
+        flex-direction: row;
+        gap: 16px;
+    }
+    .featured-news-cards-heading-section {
+        margin-bottom: 48px;
+    }
+    .featured-news-card-content{
+        padding: 24px;
+    }
+    .featured-news-card-content-button{
+        margin-top: 48px;
+    }
+     .featured-news-cards-section-container-main{
+        max-width: 1336px;
+        margin: 0 auto;
+     }
+}
 /* featured news card section css end */
