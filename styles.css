@@ -833,5 +833,121 @@ body{
         max-width: 1336px;
         margin: 0 auto;
      }
+     /* .featured-news-card:nth-of-type(2) .featured-news-card-content-button{
+        margin-top: 72px;
+     }
+     .featured-news-card:nth-of-type(3) .featured-news-card-content-button{
+        margin-top: 91px;
+     } */
 }
 /* featured news card section css end */
+
+
+/* solution section css */
+.solutions-container{
+    width: 100%;
+    padding: 0 16px;
+    margin-bottom: 200px;
+}
+.solutions-heading div{
+    font-size: 12px;
+    color: #17253d;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    font-family: var(--font-one);
+    line-height: 16px;
+    margin-bottom: 12px;
+}
+.solutions-heading h2{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    line-height: 40px;
+    color: #0e1726;
+    font-family: var(--font-two);
+}
+.solutions-content-section{
+    margin-top: 32px;
+    padding: 0 4px;
+    
+}
+.solutions-content-scroll-section{
+    position: relative;
+}
+.solutions-content-scroll-section-main{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+    flex-wrap: nowrap;
+    scrollbar-width: none;
+}
+.solutions-scroll-button{
+    border: none;
+    padding: 8px 16px;
+    text-wrap: nowrap;
+    margin-right: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: rgba(0, 85, 151, 0.1);
+    color: #004275;
+    border-radius: 200px;
+    font-weight: 400;
+    font-family: var(--font-one);
+    letter-spacing: -0.78px;
+}
+.solutions-content-scroll-section-main .solutions-scroll-button:nth-of-type(1){
+    background-color: #005595;
+    color: white;
+}
+.solutions-scroll-button:focus{
+    background-color: #005595;
+    color: white;
+}
+.solutions-content-scroll-arrow{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 250, 253);
+    box-shadow: 0 0 20px 25px rgba(244, 250, 253, 0.6);
+    border-radius: 200px;
+    border: 2px solid #005595;
+    position: absolute;
+    right: -5px;
+    top: 0;
+}
+.solutions-content-scroll-arrow svg{
+    width: 16px;
+    fill:blue;
+    height: 17px;
+}
+@media screen and (min-width:538px){
+    .solutions-container{
+        padding: 0 56px;
+    }
+}
+@media screen and (min-width:860px){
+    .solutions-heading h2{
+        font-size: 40px;
+        letter-spacing: -1px;
+        line-height: 48px;
+    }
+    .solutions-content-section{
+        margin-top: 48px;
+    }
+    .solutions-heading div{
+        margin-bottom: 8px;
+    }
+    .solutions-scroll-button{
+        padding: 8px 24px;
+    }
+    .solutions-content-scroll-arrow{
+        box-shadow: 0 0 20px 100px rgba(244, 250, 253, 0.6);
+        right: 4px;
+    }
+    .solutions-content-section{
+        padding: 0;
+    }
+}
+/* solution section css end */
