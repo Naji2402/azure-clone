@@ -831,6 +831,7 @@ body{
     .featured-news-card-content{
         padding: 24px;
     }
+    }
     .featured-news-card-content-button{
         margin-top: 48px;
     }
@@ -838,13 +839,8 @@ body{
         max-width: 1336px;
         margin: 0 auto;
      }
-     /* .featured-news-card:nth-of-type(2) .featured-news-card-content-button{
-        margin-top: 72px;
-     }
-     .featured-news-card:nth-of-type(3) .featured-news-card-content-button{
-        margin-top: 91px;
-     } */
-}
+     
+
 /* featured news card section css end */
 
 
@@ -1170,7 +1166,7 @@ body{
     width: 100%;
     padding: 0 56px;
     margin-top: 48px;
-    height: 441px;
+    max-height: 630px;
 }
 .top-solutions-section-main-large{
     display: flex;
@@ -1245,10 +1241,12 @@ body{
 }
 .top-solutions-video-section-large{
     position: relative;
+    max-width: 800px;
+    max-height: 636px;
 }
 .top-solutions-video-section-large img{
     width: 100%;
-    border-radius: 16px;
+    border-radius: 24px;
 }
 .video-play-button-large{
     background-color: #0078d4;
@@ -1279,7 +1277,7 @@ body{
     font-size: 18px;
     line-height: 24px;
     font-weight: 600;
-    padding: 24px 0;
+    padding: 32px 0;
     font-family: var(--font-two);
     background: transparent;
     border: none;
@@ -1297,11 +1295,11 @@ body{
     width: 14px;
 }
 .view-all-solution-section-large{
-    display: flex;
+    display: none;
     align-items: center;
     gap: 8px;
-    margin-top: 32px;
-    padding-bottom: 56px;
+    margin-top: 48px;
+    padding: 0 56px;
 }
 .view-all-solution-section-large span:nth-child(1){
     height: 35px;
@@ -1327,6 +1325,190 @@ body{
 @media screen and (min-width:860px){
     .top-solutions-section-large{
         display: block;
+    }
+    .view-all-solution-section-large{
+        display: flex;
+    }
 }
+@media screen and (min-width:1086px){
+    .top-solutions-large-left-section{
+        height: 380px;
+        min-width: 342px;
+    }
+    .top-solutions-section-main-large{
+        gap: 44px;
+        padding-right: 8px;
+    }
+}
+@media screen and (min-width:1460px){
+    .top-solutions-section-large{
+        max-width: 1336px;
+        margin: 48px auto 0;
+        padding-left: 0;
+    }
+    .view-all-solution-section-large{
+        max-width: 1336px;
+        margin: 48px auto 0;
+        padding: 0;
+
+    }
 }
 /* top solutions large css end */
+
+/* products and services card css */
+.product-services-container{
+    width: 100%;
+    padding: 0 16px;
+    margin-top: 32px;
+    
+}
+.product-services-container-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-ser-card-top-template-content{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    
+}
+.pro-ser-card-top-template-content-heading h3{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: -0.36px;
+    line-height: 32px;
+    color: #0e1726;
+    font-family: var(--font-three);
+}
+.pro-ser-card-top-section{
+     box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.05),0px 1px 1px 0px rgba(0,0,0,0.08);
+    border-radius: 16px;
+}
+.pro-ser-card-top-template{
+    /* padding: 0 4px; */
+    height: 404px;
+    position: relative;
+    
+    
+    
+}
+.pro-ser-card-top-template-content{
+    position: absolute;
+    bottom: 0;
+    padding: 16px;
+    background: linear-gradient(to top, white, transparent);
+    border-radius: 16px;
+}
+.pro-ser-card-top-template-content div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-ser-card-top-template-content div:nth-child(2) span{
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.48px;
+    line-height: 24px;
+    font-family: var(--font-three);
+    color: #17253d;
+}
+.pro-ser-card-top-template-content div:nth-child(2) div{
+    padding: 8px 12px;
+    background-color: #0078D4;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -0.3px;
+    line-height: 22px;
+    font-family: var(--font-two);
+    width: 100%;
+}
+.pro-ser-card-top-template img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    border-top-right-radius:16px;
+    border-top-left-radius:16px;
+    /* border-radius: 16px; */
+    aspect-ratio: 8/9;
+}
+.pro-ser-card-bottom-section{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-ser-card-bottom-top{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-ser-card-bottom-bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-ser-card-bottom-template{
+    background-color: #fefefe;
+    border-radius: 16px;
+    width: 100%;
+    height: 230px;
+    padding: 16px;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.05),0px 1px 1px 0px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+.pro-ser-card-bottom-template-top{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-ser-card-bottom-template-top div:nth-child(1) div{
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e6f2fb;
+    border-radius: 8px;
+}
+.pro-ser-card-bottom-template-top div:nth-child(1) div img{
+    object-fit: fill;
+    width: 24px;
+}
+.pro-ser-card-bottom-template-top div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.pro-ser-card-bottom-template-top div:nth-child(2) span{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #0e1726;
+    font-family: var(--font-two);
+}
+.pro-ser-card-bottom-template-top div:nth-child(2) div{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    color: #17253d;
+    font-family: var(--font-three);
+}
+.pro-ser-card-bottom-template-bottom{
+    margin-top: 32px;
+}
+.pro-ser-card-bottom-template-bottom div span{
+    font-size: 14px;
+    font-weight: 600;
+    color: #004275;
+    line-height: 20px;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    font-family: var(--font-two);
+}
+/* products and services card css end */
