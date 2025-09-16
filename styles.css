@@ -1524,6 +1524,76 @@ body{
     }
 }
 @media screen and (min-width:859px){
+    .product-services-container{
+        padding: 0 56px;
+        margin-top: 48px;
+    }
+    .product-services-container-main{
+        gap: 16px;
+    }
+    .pro-ser-card-bottom-top{
+        flex-direction: row;
+        gap: 16px;
+    }
+    .pro-ser-card-bottom-bottom{
+        flex-direction: row;
+        gap: 16px;
+    }
+    .pro-ser-card-bottom-section{
+        gap: 16px;
+    }
+    .pro-ser-card-bottom-template-bottom{
+        margin-top: 48px;
+    }
+    .pro-ser-card-bottom-template-top{
+        gap: 16px;
+    }
+    .pro-ser-card-bottom-template-top div:nth-child(2){
+        gap: 16px;
+    }
+    .pro-ser-card-bottom-template{
+        padding: 24px;
+        justify-content: space-between;
+        border-radius: 24px;
+    }
+    /* .pro-ser-card-top-template{
+        height: 317px;
+    } */
+    .pro-ser-card-top-template-content{
+        width: 100%;
+        height: 100%;
+        justify-content: end;
+        background: linear-gradient(to top, white, transparent);
+    }
+    .pro-ser-card-top-template img{
+        border-radius: 16px;
+    }
     
 }
+
+@media screen and (min-width:1439px){
+    .product-services-container-main{
+        flex-direction: row;
+    }
+    .pro-ser-card-top-template{
+        height: 100%;
+        width: 310px;
+    }
+      .product-services-container{
+        padding: 0 72px;
+    }
+    .pro-ser-card-top-template-content{
+        padding: 24px;
+    }
+    .pro-ser-card-top-template-content-heading h3{
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .pro-ser-card-top-template-content div:nth-child(2) div{
+        width: 164px;
+    }
+}
 /* products and services card css end */
+
+
+
