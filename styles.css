@@ -1665,6 +1665,7 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+    margin-bottom: 48px;
 }
 
 .gartner-section-container{
@@ -1677,7 +1678,7 @@ body{
     box-shadow: 0px 0px 2px 0px rgba(0,0,0,0.1),0px 4px 8px 0px rgba(0,0,0,0.1);
 }
 .gartner-card-top{
-    padding: 8px 9px 0;
+    padding: 8px 9px 8px;
 }
 .gartner-card-top img{
     width: 100%;
@@ -1741,9 +1742,11 @@ body{
         flex-direction: row-reverse;
         gap: 0;
         min-height: 484px;
+        border-radius: 24px;
     }
      .gartner-section {
         padding: 72px 56px 48px 56px;   
+        
     }
     .gartner-card-top{
         max-width: 50%;
@@ -1751,11 +1754,175 @@ body{
       .gartner-card-top img{
         height: 100%;
         width: 100%;
+        border-radius: 16px;
       }
       .gartner-card-bottom{
         max-width: 50%;
-        padding: 24px 56px 24px 24px;
-        justify-content: center;
+        padding: 24px 60px 24px 16px;
+        justify-content: space-between;
+        flex:  0 0 50%;
       }
+      .gartner-card-bottom div:nth-child(1){
+        margin-top: 76px;
+        gap: 16px;
+      }
+      .gartner-card-bottom div:nth-child(2) a{
+        padding: 12px 16px;
+    }
+    .gartner-card-top{
+        padding-left: 0;
+    }
+}
+@media screen and (min-width:1439px) {
+    .gartners-section-main{
+        max-width: 1336px;
+        margin: 56px auto 0 auto;
+    }
+    .gartner-card-bottom div:nth-child(1) span{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.48px;
+    }
+    .gartner-card-bottom div:nth-child(1) div{
+        font-size: 20px;
+        letter-spacing: -0.6px;
+        line-height: 32px;
+    }
 }
 /* gartner section css end */
+
+.resources-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 14px;
+    background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/54300-Take-The-Next-Step-Background-1600x552?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=542&qlt=100&fit=constrain");
+    background-position: bottom center;
+    background-repeat: no-repeat;
+}
+.resources-heading-section div{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.96px;
+    line-height: 16px;
+    color: #17253d;
+    font-family: var(--font-one);
+    margin-bottom: 12px;
+    text-align: center;
+}
+.resources-heading-section h2{
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: -0.8px;
+    line-height: 40px;
+    font-family: var(--font-three);
+    text-align: center;
+    margin-bottom: 24px;
+}
+.resources-scroll-section{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 8px 0px 8px 8px;
+    scrollbar-width: none;
+}
+.resources-scroll-content{
+    min-width: 220px;
+    font-size: 16px;
+    font-weight: 600;
+    height: 52px;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+    padding: 16px;
+    font-family: var(--font-two);
+    border: 1px solid #bdc5d2;
+    /* box-shadow:rgba(0, 0, 0, 0.12) 0px 0px 2px 0px, rgba(0, 0, 0, 0.14) 0px 1.008px 2px 0px; */
+    background-color: #fefefe;
+}
+.resources-scroll-content:nth-child(1){
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    position: relative;
+}
+.resources-scroll-content:nth-child(1)::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    background-color: #004275;
+    width: 100%;
+    border-bottom-left-radius:8px ;
+}
+.resources-scroll-content:nth-last-child(1){
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.resources-scroll-section-arrow{
+    margin-top: 24px;
+    display: flex;
+    gap: 10px;
+}
+.resources-scroll-section-arrow button{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    border: 2px solid #004275;
+    background: transparent;
+}
+.resources-scroll-section-arrow button:nth-child(1){
+    opacity: 0.2;
+}
+.resources-scroll-section-arrow button svg{
+    width: 24px;
+}
+.resources-main-content-section{
+    margin-top: 24px;
+}
+.resources-main-content-top{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.resources-main-content-top span{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    font-family: var(--font-two);
+    text-align: center;
+}
+.resources-main-content-top div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+}
+.resources-main-content-top div div{
+     height: 35px;
+    width: 35px;
+    background-color: #0078D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.resources-main-content-top div div svg{
+    width: 14px;
+}
+.resources-main-content-bottom{
+    margin-top: 24px;
+    margin-bottom: 48px;
+    padding: 16px;
+    backdrop-filter: blur(20px);
+    border-radius: 16px;
+}
+.resources-main-content-bottom img{
+    width: 100%;
+    border-radius: 8px;
+}
+/* resoruces section css */
+/* resoruces section css end */
