@@ -1512,6 +1512,48 @@ body{
     text-underline-offset: 2px;
     font-family: var(--font-two);
 }
+
+
+
+
+.see-all-products-section-large{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 32px;
+    padding: 0 20px;
+}
+.see-all-products-section-large span:nth-child(1){
+    height: 35px;
+    width: 35px;
+    background-color: #0078D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.see-all-products-section-large span:nth-child(1) svg{
+    width: 14px;
+}
+
+.see-all-products-section-large span:nth-child(2){
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #004275;
+    font-family: var(--font-two);
+    
+}
+
+
+
+
+
+
+
+
+
+
 @media screen and (min-width:539px){
     .product-services-container{
         padding: 0 64px;
@@ -1521,6 +1563,9 @@ body{
     }
     .pro-ser-card-bottom-template{
         height: auto;
+    }
+    .see-all-products-section-large{
+         padding: 0 64px;
     }
 }
 @media screen and (min-width:859px){
@@ -1568,19 +1613,24 @@ body{
     .pro-ser-card-top-template img{
         border-radius: 16px;
     }
+    /* .see-all-products-section-large{
+        display: flex;
+    } */
     
 }
 
 @media screen and (min-width:1439px){
+    .product-services-container{
+        max-width: 1336px;
+        margin: 48px auto 0;
+        padding: 0;
+    }
     .product-services-container-main{
         flex-direction: row;
     }
     .pro-ser-card-top-template{
         height: 100%;
         width: 310px;
-    }
-      .product-services-container{
-        padding: 0 72px;
     }
     .pro-ser-card-top-template-content{
         padding: 24px;
@@ -1592,7 +1642,20 @@ body{
     .pro-ser-card-top-template-content div:nth-child(2) div{
         width: 164px;
     }
+    .pro-ser-card-bottom-template-top div:nth-child(2) span{
+        font-size: 20px;
+        line-height: 28px;
+    }
 }
+@media screen and (min-width:1460px){
+    .see-all-products-section-large{
+        max-width: 1336px;
+        margin: 48px auto 0;
+        padding: 0;
+
+    }
+}
+
 /* products and services card css end */
 
 
