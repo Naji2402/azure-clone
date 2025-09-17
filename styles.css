@@ -2094,3 +2094,94 @@ body{
         }
     }
 /* infrastructure css end */
+
+
+/* customer stories section css */
+    .customer-stories-section{
+        width: 100%;
+        padding: 56px 16px;
+        background: url("https://cdn-dynmedia-1.microsoft.com/is/image/microsoftcorp/54300-Customer-Stories-Background-1600x1037?resMode=sharp2&op_usm=1.5,0.65,15,0&wid=1600&hei=1133&qlt=100&fit=constrain");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .customer-stories-heading-section{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+    .customer-stories-heading-top div{
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0.96px;
+        font-family: var(--font-one);
+        color: #17253d;
+        margin-bottom: 12px;
+    }
+    .customer-stories-heading-top h2{
+        font-size: 32px;
+        letter-spacing: -0.8px;
+        line-height: 40px;
+        font-weight: 500;
+        font-family: var(--font-two);
+    }
+    .customer-stories-heading-bottom button{
+        font-size: 15px;
+        width: fit-content;
+        font-weight: 500;
+        letter-spacing: -0.3px;
+        line-height: 22px;
+        padding: 12px;
+        border-radius: 8px;
+        border: 2px solid #17253d;
+        background: transparent;
+        font-family: var(--font-one);
+        color: #004275;
+    }
+    @media screen and (min-width:539px){
+         .customer-stories-section{
+            padding: 56px 64px;
+         }
+    }
+    @media screen and (min-width:859px){
+        .customer-stories-section{
+            padding: 96px 56px ;
+         }
+         .customer-stories-heading-section{
+            flex-direction: row;
+            gap: 16px;
+         }
+         .customer-stories-heading-top{
+            flex: 1;
+         }
+         .customer-stories-heading-bottom{
+            flex: 1;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+         }
+         .customer-stories-heading-top div{
+            margin-bottom: 8px;
+         }
+         .customer-stories-heading-top h2{
+            font-size: 40px;
+            letter-spacing: -1px;
+            line-height: 48px;
+         }
+         .customer-stories-heading-bottom button{
+            padding: 12px 16px;
+         }
+    }
+    @media screen and (min-width:1439px){
+        .customer-stories-section-main{
+            max-width: 1328px;
+            margin: 0 auto;
+        }
+        .customer-stories-heading-top h2{
+            font-size: 48px;
+            letter-spacing: -1.2px;
+            line-height: 56px;
+        }
+    }
+/* customer stories section css end */
