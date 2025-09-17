@@ -1815,11 +1815,11 @@ body{
     font-weight: 500;
     letter-spacing: -0.8px;
     line-height: 40px;
-    font-family: var(--font-three);
+    font-family: var(--font-two);
     text-align: center;
-    margin-bottom: 24px;
+    margin-bottom: 8px;
 }
-.resources-scroll-section{
+.resources-scroll-section-main{
     width: 100%;
     display: flex;
     overflow-x: scroll;
@@ -1910,6 +1910,13 @@ body{
     align-items: center;
     border-radius: 8px;
 }
+.resources-main-content-top div span{
+    color: #004275;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    font-family: var(--font-two);
+}
 .resources-main-content-top div div svg{
     width: 14px;
 }
@@ -1917,12 +1924,78 @@ body{
     margin-top: 24px;
     margin-bottom: 48px;
     padding: 16px;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(120px);
     border-radius: 16px;
 }
 .resources-main-content-bottom img{
     width: 100%;
     border-radius: 8px;
+}
+@media screen and (min-width:539px){
+    .resources-section{
+        padding: 0 62px;
+    }
+}
+@media screen and (min-width:859px){
+    .resources-scroll-section{
+        position: relative;
+    }
+    .resources-scroll-section-arrow{
+        position: absolute;
+        right: -12px;
+        top: 20px;
+        margin-top: 0;
+        background: white;
+        
+    }
+    .resources-scroll-section-arrow button{
+        box-shadow:  0 0 20px 40px rgba(244, 250, 253, 0.842);
+    }
+    .resources-scroll-section-arrow button:nth-child(1){
+        display: none;
+    }
+    .resources-scroll-content{
+        padding: 16px 24px 24px;
+        height: auto;
+    }
+    .resources-scroll-content:nth-child(1){
+        border-top-left-radius:16px ;
+        border-bottom-left-radius:16px ;
+    }
+    .resources-scroll-content:nth-last-child(1){
+        border-top-right-radius:16px ;
+        border-bottom-right-radius:16px ;
+    }
+    .resources-scroll-content:nth-child(1)::after{
+        border-bottom-left-radius:16px ;
+    }
+    .resources-heading-section h2{
+        font-size: 40px;
+        letter-spacing: -1px;
+        line-height: 48px;
+        margin-bottom: 24px;
+    }
+    .resources-main-content-bottom{
+        max-width: 67%;
+        width: 100%;
+        margin:40px auto 70px;
+        padding: 24px;
+    }
+}
+@media screen and (min-width:1439px){
+    .resources-section{
+        max-width: 1336px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    .resources-heading-section h2{
+        font-size: 48px;
+        letter-spacing: -1.2px;
+        line-height: 56px;
+    }
+    .resources-scroll-section-arrow{
+        display: none;
+    }
 }
 /* resoruces section css */
 /* resoruces section css end */
