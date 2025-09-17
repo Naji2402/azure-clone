@@ -1984,6 +1984,11 @@ body{
 }
 @media screen and (min-width:1439px){
     .resources-section{
+        padding: 0;
+        width: 100%;
+        background-size: cover;
+    }
+    .resources-section-main{
         max-width: 1336px;
         padding: 0;
         margin: 0 auto;
