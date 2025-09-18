@@ -745,7 +745,9 @@ body{
     background-color: #f7f7f7;
     border-radius: 16px;
     flex: 1;
-      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
     
 }
 .featured-news-card-section{
@@ -763,6 +765,10 @@ body{
 }
 .featured-news-card-content{
     padding: 16px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .featured-news-card-content-button div svg{
     width: 14px;
@@ -2144,11 +2150,18 @@ body{
         margin-top: 32px;
         background-color: #fefefe;
         border-radius: 8px;
-        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 8px 0px rgba(0, 0, 0, 0.1);;
+        box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.1), 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+        display: grid;
+        grid-auto-flow: column;
+        grid-auto-columns: 100%;
+        overflow-x: scroll;
+        scrollbar-width: none;
     }
-    .customer-stories-content-main{
+    .customer-stories-content-card{
         display: flex;
         flex-direction: column;
+         box-shadow: 0px 4px 8px -2px rgba(0, 0, 0, 0.1);
+
     }
     .customer-stories-content-top{
         width: 100%;
@@ -2163,6 +2176,8 @@ body{
         flex-direction: column;
         gap: 24px;
         padding: 16px;
+        flex: 1;
+        justify-content: space-between;
     }
     .customer-stories-content-bottom-top{
         display: flex;
@@ -2240,6 +2255,30 @@ body{
         text-align: center;
         margin-top: 24px;
     }
+    .customers-scroll-section-arrow{
+        margin-top: 36px;
+        display: flex;
+        gap: 10px;
+    }
+    .customers-scroll-section-arrow button{
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 200px;
+        border: 2px solid #004275;
+        background: transparent;
+    }
+    .customers-scroll-section-arrow button:nth-child(1){
+        opacity: 0.2;
+    }
+    .customers-scroll-section-arrow button svg{
+        width: 28px;
+        height: 28px;
+    }
+
+
     @media screen and (min-width:488px){
         .customer-stories-products-section-top{
             flex-direction: row;
@@ -2298,9 +2337,9 @@ body{
             margin-top: 48px;
             border-radius: 24px;
          }
-         .customer-stories-content-main{
+         .customer-stories-content-card{
             flex-direction: row-reverse;
-            max-height: 502px;
+            /* max-height: 502px; */
          }
          .customer-stories-content-top{
             flex: 0 0 50%;
@@ -2336,6 +2375,9 @@ body{
          .customer-stories-products-section-top{
             flex-direction: column;
             gap: 16px;
+         }
+         .customers-scroll-section-arrow{
+            display: none;
          }
     }
     @media screen and (min-width:1048px){
