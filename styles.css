@@ -2576,6 +2576,11 @@ body{
             flex-direction: row;
             gap: 16px;
         }
+        .next-step-heading h2{
+            font-size: 40px;
+            letter-spacing: -1px;
+            line-height: 48px;
+        }
         .next-step-cards{
             padding: 24px;
             flex: 1;
@@ -2594,5 +2599,24 @@ body{
             padding-right: 20px;
         }
 
+    }
+    @media screen and (min-width:1439px){
+        .next-step-section{
+            padding: 96px 0px 96px;;
+        }
+        .next-step-section-main{
+            max-width: 1328px;
+            margin: 0 auto;
+        }
+        .next-step-heading h2{
+            font-size: 48px;
+            letter-spacing: -1.2px;
+            line-height: 56px;
+        }
+        .next-step-card-top h3{
+            font-size: 24px;
+            letter-spacing: -0.24px;
+            line-height: 32px;
+        }
     }
 /* take the next step css end */
