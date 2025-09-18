@@ -2620,3 +2620,87 @@ body{
         }
     }
 /* take the next step css end */
+
+/* social media section css  */
+    .social-media-section{
+        width: 100%;
+        padding: 32px 20px 42px 20px;
+        background-color: #f7f7f7;
+    }
+    .social-media-section-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .get-app-section div{
+        width: fit-content;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 15px 15px;
+        background-color: #e6e6e6;
+        border-radius: 3.2px;
+    }
+    .get-app-section div img{
+        width: 23px;
+        height: 23px;
+    }
+    .get-app-section div a{
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: -0.3px;
+        line-height: 22px;
+        font-family: var(--font-two);
+        color: black;
+    }
+    .social-media-apps-section{
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    .social-media-apps-section ul{
+        list-style: none;
+        display: flex;
+        gap: 24px;
+    }
+    .social-media-apps-section ul li div img{
+        width: 24px;
+        height: 24px;
+    }
+    @media screen and (min-width:474px){
+        .social-media-section-main{
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    @media screen and (min-width:539px){
+        .social-media-section{
+            width: 100%;
+            padding: 32px 68px 40px;
+        }
+        .social-media-section-main{
+            flex-direction: column;
+            align-items: start;
+        }
+    }
+    @media screen and (min-width:570px){
+        .social-media-section-main{
+            flex-direction: row;
+            align-items: center;
+        }
+        .social-media-section{
+            padding: 32px 68px 34px;
+        }
+        .social-media-apps-section{
+            padding-left: 12px;
+        }
+    }
+    @media screen and (min-width:1439px){
+        .social-media-section{
+            padding: 32px 0 34px;
+        }
+        .social-media-section-main{
+            max-width: 1328px;
+            margin: 0 auto;
+        }
+    }
+/* social media section css end */
