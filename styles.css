@@ -2277,8 +2277,56 @@ body{
         width: 28px;
         height: 28px;
     }
-
-
+    .customer-stories-card-navigation-section{
+        width: 100%;
+        padding: 0 56px;
+        max-width: 940px;
+        margin: 0 auto;
+    }
+    .customer-stories-navigation-list{
+        list-style: none;
+        width: 100%;
+        display: flex;
+        border-radius: 16px;
+        box-shadow:  rgba(0, 0, 0, 0.40) 0px 0px 0px, rgba(0, 0, 0, 0.30)  0px 2px 4px 0px;
+    }
+    .customer-stories-navigation-list div{
+        padding:26px 16px;
+        background-color: #fefefe;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* box-shadow:inset rgba(0, 0, 0, 0.12) 0px 0px 0px 0px, rgba(0, 0, 0, 0.12)  0px 2px 4px 0px; */
+        box-shadow: -2px 0px 3px rgba(0, 0, 0, 0.1);
+    }
+    .customer-stories-navigation-list li{
+        flex: 1;
+    }
+    .customer-stories-navigation-list div img{
+        width: 122px;
+    }
+    .customer-stories-navigation-list li:nth-child(1) div{
+        border-top-left-radius: 16px;
+        border-bottom-left-radius: 16px;
+        /* position: relative; */
+        border-bottom: 4px solid #005597;
+    }
+    .customer-stories-navigation-list li div:hover{
+        border-bottom: 4px solid #005597;
+    }
+    /* .customer-stories-navigation-list li:nth-child(1) div::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 4px;
+        background-color: #005597;
+        border-bottom-left-radius: 16px;
+    } */
+    .customer-stories-navigation-list li:nth-last-child(1) div{
+        border-top-right-radius: 16px;
+        border-bottom-right-radius: 16px;
+    }
     @media screen and (min-width:488px){
         .customer-stories-products-section-top{
             flex-direction: row;
@@ -2307,7 +2355,7 @@ body{
     }
     @media screen and (min-width:859px){
         .customer-stories-section{
-            padding: 96px 56px ;
+            padding: 96px 56px 50px 56px;
          }
          .customer-stories-heading-section{
             flex-direction: row;
