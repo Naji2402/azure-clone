@@ -2737,7 +2737,60 @@ body{
     line-height: 16px;
     color: #616161;
     font-family: var(--font-three);
-
+}
+.footer-bottom{
+    padding: 28px 24px 74px;
+    background-color: #f2f2f2;
+}
+.footer-bottom-right ul{
+    list-style: none;
+}
+.footer-bottom a{
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #616161;
+    font-family: var(--font-three);
+}
+.footer-bottom-main{
+    display: flex;
+    flex-direction: column;
+}
+.bottom-footer-list{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px 0px 6px;
+}
+.bottom-footer-list li{
+    padding: 6px 13px 0px 0px;
+}
+.footer-bottom-left div:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding-right: 24px;
+}
+.footer-bottom-left div:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 4px 24px 0px 0px;
+    margin: 4px 0px 11px;
+}
+.footer-bottom-left div:nth-child(3){
+    padding-right: 24px;
+}
+.footer-bottom-left div:nth-child(1) svg{
+    width: 21px;
+    height: 25px;
+}
+.footer-bottom-left div:nth-child(2) svg{
+    width: 34px;
+    height: 18px;
+}
+.footer-bottom-right{
+    padding-right: 20px;
 }
 @media screen and (min-width:539px){
     .footer-top{
@@ -2761,6 +2814,10 @@ body{
 @media screen and (min-width:1083px){
     .footer{
         padding: 0 5%;
+    }
+    .footer-main{
+         max-width: 1600px;
+         margin: 0 auto;
     }
     .footer-top{
         flex-direction: row;
